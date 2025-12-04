@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI 기반 얼굴인식 출석체크 시스템 — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">AI</h1>
+      <nav class="nav">
+        <a href="index.html">← Back</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h2>AI 기반 얼굴인식 출석체크 시스템</h2>
+    <p>인공지능 기술을 활용하여 개인의 얼굴 특징을 인식하고 자동으로 출석을<br>확인 및 기록하는 비접촉식 스마트 관리 시스템입니다.</p>
+
+    <section>
+      <h3>📌 프로젝트 소개</h3>
+      <p>
+        이 프로젝트는 인공지능(AI)의 딥러닝 기술을 활용하여 자동화된 비접촉식 출석 관리 솔루션을 구축하는 것을 목표로 합니다. 
+        <br>기존의 수동 출석 체크 방식(호명, 서명)이나 카드/지문 인식 방식의 불편함, 부정 출석 위험, 위생 문제를 해결하고, 관리의 효율성과 정확도를 극대화하는 데 중점을 둡니다.
+        <h4>주요 목표 : </h4> <p>빠르고 정확한 실시간 출석 확인 및 데이터 관리</p>
+        <h4>핵심 기술  : </h4><p>얼굴 검출(Face Detection) 및 얼굴 인식(Face Recognition) 알고리즘</p>
+        <h4>주요 대상 : </h4><p>학교, 학원, 기업의 교육장, 회의실, 건설 현장 등 출석 관리가 필요한 모든 환경.</p>
+      </p>
+    </section>
+
+    <section>
+      <h3>🎬 시연 영상</h3>
+      <!-- YouTube 삽입 가능 -->
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+   <section>
+  <h3>💻 화면 스크린샷</h3>
+
+  <div class="gallery">
+    <img src="images/login.jpg" alt="login" onclick="openLightbox(this.src)">
+    <img src="images/약관동의.jpg" alt="main" onclick="openLightbox(this.src)">
+    <img src="images/welcome.jpg" alt="attendance" onclick="openLightbox(this.src)">
+    <img src="images/main.jpg" alt="result" onclick="openLightbox(this.src)">
+    <img src="images/출석진행화면.jpg" alt="yea" onclick="openLightbox(this.src)">
+    <img src="images/얼굴인식 1.jpg" alt="lim" onclick="openLightbox(this.src)">
+    <img src="images/얼굴인식2.jpg" alt="eee" onclick="openLightbox(this.src)">
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="">
+</div>
+
+
+
+    <section>
+      <h3>🧩 기술 구성</h3>
+      <ul>
+        <li>백엔드: Spring Boot</li>
+        <li>모바일: React Native (Expo)</li>
+        <li>DB: MySQL</li>
+        <li>AI: OpenCV, dlib</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>

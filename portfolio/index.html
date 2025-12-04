@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yealim — Portfolio</title>
+  <meta name="description" content="Yealim의 개발 포트폴리오" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Yealim</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+         <img src="images/me.png" alt="profile image" class="hero-img">
+        
+      <h2>안녕하세요, 프론트엔드 & 백엔드 개발자<br> Yealim의 포트폴리오입니다.</h2>
+    
+      <a class="cta" href="resume.html">이력서</a>
+    </section>
+
+    <section id="about">
+      <h3>About Me</h3>
+      <p>풀스택 개발자, 백엔드 개발자, 프론트엔드 개발자</p>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <article class="project">
+        <h4>인공지능(AI) 기반 얼굴인식 출석체크 시스템</h4>
+        <p>설명: 얼굴인식 + GPS 검증으로 출석 자동화 구현.</p>
+        <p>기술: Spring Boot, React Native, MySQL, OpenCV, dlib</p>
+        <p><a href="https://github.com/yealimeee/project" target="_blank" rel="noopener">GitHub</a>  
+          <br><br>
+          <a href="project-1.html">프로젝트 보기💡</a></p>
+      </article>
+
+      <!-- 프로젝트 더 추가 -->
+    </section>
+
+    <section id="skills">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>Java / Spring Boot</li>
+        <li>React / React Native</li>
+        <li>Python / OpenCV</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com">ringring567@naver.com</a></p>
+      <p>GitHub: <a href="https://github.com/yealimeee" target="_blank" rel="noopener">github.com/yealimeee</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Yealim. All rights reserved.</small>
+    </div>
+  </footer>
+
+    <script>
+  function openLightbox(src) {
+    document.getElementById('lightbox').style.display = 'flex';
+    document.getElementById('lightbox-img').src = src;
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yealim — Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 추가적인 이력서 전용 스타일 (styles.css와 함께 동작) */
+        .resume-header {
+            text-align: center;
+            padding: 28px 0;
+        }
+
+        .profile-row {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover
+        }
+
+        .profile-meta {
+            flex: 1
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .title2 {
+            border-left: 3px solid #eee;
+            padding: 10px 14px;
+        }
+
+        .section {
+            margin-top: 28px
+        }
+
+        .job {
+            border-left: 3px solid #eee;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            background: #fff
+        }
+
+        .job h4 {
+            margin: 0 0 6px 0
+        }
+
+        .skill-badge {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #f3f4f6;
+            margin: 4px 6px 4px 0
+        }
+
+        @media(max-width:700px) {
+            .profile-row {
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .resume-flex {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .left-col {
+            flex: 0 0 auto;
+        }
+
+        .right-col {
+            flex: 1;
+            margin-top: 0;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 230px;
+            border-radius: 3px;
+            object-fit: cover;
+        }
+
+        .name-title {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+        }
+
+        .contact-box p {
+            display: flex;
+            gap: 12px;
+            /* label과 내용 사이 간격 */
+            margin: 4px 0;
+            font-size: 16px;
+        }
+
+        .contact-box span {
+            width: 70px;
+            /* Phone / Email / GitHub 넓이 통일 → 정렬 깔끔해짐 */
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Yealim</h1>
+            <nav class="nav">
+                <a href="index.html">← home</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="resume-header">
+            <div class="resume-flex">
+
+                <!-- 왼쪽 사진 -->
+                <div class="left-col">
+                    <img src="images/profile.jpg" class="profile-photo" alt="profile">
+                </div>
+
+                <!-- 오른쪽 텍스트 -->
+                <div class="right-col">
+                    <h2 class="name-title">
+                        문예림 Moon Yealim</h2><br>
+                <div class="contact-box">
+                    <p><strong>| Phone:</strong> 010-8757-0724</p>
+                    <p><strong>| Email: </strong><a href="mailto:you@example.com">ringring567@naver.com</a></p>
+                    <p><strong>| GitHub: </strong><a href="https://github.com/yealimeee" target="_blank"
+                            rel="noopener">github.com/yealimeee</a></p>
+                </div>
+                </div>
+        </section>
+<br>
+        <section class="section" id="summary">
+            <div class="section-title">
+            
+                <h3>프로페셔널 요약</h3>
+            </div>
+            <div class="title2">
+                <p>AI 기반 얼굴인식 출석체크 시스템 개발 경험. Spring Boot와 React Native를 사용한 풀스택 개발 가능. 이미지 전처리(OpenCV, dlib) 및 백엔드 API
+                설계/배포 경험 보유.</p>
+            </div>
+<br>
+<br>
+                <h3>이력사항</h3>
+                <div class="title2">
+                <ul>
+                    <li></li>
+                </ul>
+</div>
+        <section class="section" id="experience">
+            <div class="section-title">
+                <h3>Projects</h3>
+            </div>
+
+            <div class="job">
+                <h4>AI 출석체크 시스템 — 팀장 및 풀스택 개발자</h4>
+                <p style="margin:6px 0 0 0; color:#666">2025.03 - 2025.11</p>
+                <ul>
+                    <li>얼굴 인식 모듈(OpenCV, dlib) 설계</li>
+                    <li>Spring Boot로 RESTful API 개발 및 MySQL 연동</li>
+                    <li>React Native(Expo)로 모바일 앱 개발, GPS 기반 위치 검증 로직 구현</li>
+                    <li>HTML&CSS로 관리자 웹 페이지 개발</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h4>AI 뉴스 편향 리포트 - 풀스택 개발자 </h4>
+                <p style="margin:6px 0 0 0; color:#666">2024.06 — 2024.12</p>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-title">
+                <h3>학력</h3>
+            </div>
+            <div class="title2">
+            <p><strong>한양여자대학교 빅데이터과</strong> — 2023.03 ~ 2026.02 (졸업 예정)</p>
+             <p><strong>백운고등학교</strong> — 2020.03 ~ 2023.02 (졸업)</p>
+        </section>
+    </div>
+        <section class="section" id="skills">
+            <div class="section-title">
+                <h3>기술 스택</h3>
+            </div>
+            <div>
+                <span class="skill-badge">Java / Spring Boot</span>
+                <span class="skill-badge">React / React Native</span>
+                <span class="skill-badge">Python / OpenCV</span>
+                <span class="skill-badge">MySQL / JPA</span>
+                <span class="skill-badge">Git</span>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-title">
+                <h3>프로젝트 요약</h3>
+            </div>
+            <div class="job">
+                <h4>AI 출석체크 시스템</h4>
+                <p>요약: 얼굴 인식 및 GPS 검증을 통해 출석 자동화</p>
+                <p>기술: Spring Boot, React Native, OpenCV, MySQL</p>
+                <p>링크: <a href="project-1.html">프로젝트 페이지</a> · <a href="https://github.com/yourname/project"
+                        target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-title">
+                <h3>연락처</h3>
+            </div>
+            <p>Email: <a href="mailto:you@example.com">ringring567@naver.com</a></p>
+            <p>Phone: 010-8757-0724</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Yealim. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
